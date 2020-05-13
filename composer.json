@@ -1,0 +1,37 @@
+{
+  "name": "onesite/codesniffer",
+  "description": "Code sniffer v1.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "1Site.vn",
+      "email": "hotro@1site.vn",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "squizlabs/php_codesniffer": "^3.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "OneSite\\CodeSniffer\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "OneSite\\CodeSniffer\\": [
+        "src",
+        "tests"
+      ]
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x.x-dev"
+    }
+  }
+}
